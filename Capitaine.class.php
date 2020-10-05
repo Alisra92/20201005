@@ -38,6 +38,10 @@ class Capitaine extends Marin {
         echo "Je suis le Capitaine ".$this->getNom()." et c'est moi qui commande ! <BR>" ;
 }
 
+    public function__toString(){
 
+    return parent::__toString()." et le grade est : ".$this->getGrade();
+
+}
 
 }

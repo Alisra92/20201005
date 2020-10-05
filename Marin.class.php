@@ -57,5 +57,8 @@ class Marin {
 
 }
 
+    public function__toString(){
+    return "Le nom est : ".$this->$getNom." et la fonction est : ".$this->$getFonction;
+}
 
 }

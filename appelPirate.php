@@ -11,10 +11,14 @@ require "autoload.php" ;
 
 echo Marin::quiSuisJe();
 $gentilMarin = new Marin("Robert", "prof") ;
-// echo "$gentilMarin" ;
+echo "$gentilMarin" ;
 
 $robert = new Capitaine("Robert", "prof", "senior") ;
 $robert->commande() ;
 
-// echo "$robert" ;
+/*public function__toString(){
+    return "Le nom est : ".$this->$getNom." et la fonction est : ".$this->
+}*/
+
+echo "$robert" ;
 
