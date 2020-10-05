@@ -40,7 +40,7 @@ class Capitaine extends Marin {
 
     public function__toString(){
 
-    return parent::__toString()." et le grade est : ".$this->getGrade();
+    return parent::__toString()." et le grade est : ".$this->$getGrade();
 
 }
 
