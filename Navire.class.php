@@ -87,7 +87,7 @@ class Navire {
         return $affichageNavire;
     }
 
-// dfsjkkh
+
 
 
 }
