@@ -80,14 +80,17 @@ class Navire {
         $affichageNavire = "Le navire mesure : ".$this->getTaille().
             " son modèle est : ".$this->getModele(). " et ses marins sont : "."<BR>";
 
+        else {
         foreach ($this->equipage as $unMarin)
-            $affichageNavire.=$unMarin."<BR>" ;
+            $affichageNavire .= $unMarin . "<BR>";
 
         // $affichageNavire = $affichageNavire.$unMarin."<BR>" ;
         return $affichageNavire;
+
+            }
+
     }
 
 
 }
-
 

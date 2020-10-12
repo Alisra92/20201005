@@ -37,8 +37,21 @@ class Pirate extends Marin implements Piraterie
             $navire->setEquipage(array());
         }
 
+        else {
+            $listeNouveauEquipage = array() ;
+
+            foreach ($navire->getEquipage() as $unMarin)
+            {
+                if ( $unMarin instanceof Capitaine){
+
+                }
+                else {
+                    $listeNouveauEquipage[] = $unMarin;
+                }
+            }
+            $navire->setEquipage($listeNouveauEquipage);
+        }
+
     }
-
-
 
 }
