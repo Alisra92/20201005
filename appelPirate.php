@@ -9,16 +9,28 @@
 
 require "autoload.php" ;
 
-echo Marin::quiSuisJe();
+/* echo Marin::quiSuisJe();
 $gentilMarin = new Marin("Robert", "prof") ;
 echo "$gentilMarin" ;
 
 $robert = new Capitaine("Robert", "prof", "senior") ;
 $robert->commande() ;
 
-/*public function__toString(){
-    return "Le nom est : ".$this->$getNom." et la fonction est : ".$this->
-}*/
+/*public function __toString(){
+    return "Le nom est : ".$this->getNom." et la fonction est : ".$this->
+}//
 
-echo "$robert" ;
+echo "$robert" ;*/
 
+$robert = new Capitaine("Robert","prof","senior");
+$isra = new Capitaine("Isra","élève","mousaillon");
+
+$equipage=array();
+
+$unNavire = new Navire($equipage,60,"Corvette");
+
+$unNavire->ajouteMarin($robert);
+$unNavire->ajouteMarin($isra);
+$unNavire->ajouteMarin(new Marin("LetteVouetto","mousaillon"));
+
+echo $unNavire;

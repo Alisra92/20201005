@@ -35,12 +35,12 @@ class Capitaine extends Marin {
     }
 
     public function commande(){
-        echo "Je suis le Capitaine ".$this->getNom()." et c'est moi qui commande ! <BR>" ;
+        echo "<BR>Je suis le Capitaine ".$this->getNom()." et c'est moi qui commande ! <BR>" ;
 }
 
-    public function__toString(){
+    public function __toString(){
 
-    return parent::__toString()." et le grade est : ".$this->$getGrade();
+    return parent::__toString()." et le grade est : ".$this->getGrade();
 
 }
 
