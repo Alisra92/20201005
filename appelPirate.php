@@ -33,4 +33,13 @@ $unNavire->ajouteMarin($robert);
 $unNavire->ajouteMarin($isra);
 $unNavire->ajouteMarin(new Marin("LetteVouetto","mousaillon"));
 
+echo "Avant que le vilain pirate attaque ..."."<BR>";
+
+echo $unNavire;
+
+echo "Après l'attaque ..."."<BR>";
+
+$BarbeNoire = new Pirate("BarbeNoire","Massacreur",60) ;
+$BarbeNoire->pillage($unNavire);
+
 echo $unNavire;
