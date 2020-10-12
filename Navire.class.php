@@ -1,9 +1,10 @@
 <?php
 
-class Navire {
-    private $equipage = array() ;
-    private $taille ;
-    private $modele ;
+class Navire
+{
+    private $equipage = array();
+    private $taille;
+    private $modele;
 
     /**
      * Navire constructor.
@@ -66,7 +67,8 @@ class Navire {
         $this->modele = $modele;
     }
 
-    public function ajouteMarin(Marin $unMarin){
+    public function ajouteMarin(Marin $unMarin)
+    {
 
         // array_push( $this->equipage, $unMarin)
 
@@ -76,21 +78,13 @@ class Navire {
     public function __toString()
     {
         // TODO: Implement __toString() method.
+        $aRetourner = "Le navire est de taille " . $this->getTaille() . " et son modèle est: " . $this->getModele() . "<BR>";
 
-        $affichageNavire = "Le navire mesure : ".$this->getTaille().
-            " son modèle est : ".$this->getModele(). " et ses marins sont : "."<BR>";
+        foreach ($this->getEquipage() as $unMarin) {
+            $aRetourner .= $unMarin;
+        }
+        return $aRetourner;
 
-        else {
-        foreach ($this->equipage as $unMarin)
-            $affichageNavire .= $unMarin . "<BR>";
-
-        // $affichageNavire = $affichageNavire.$unMarin."<BR>" ;
-        return $affichageNavire;
-
-            }
 
     }
-
-
 }
-

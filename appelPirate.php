@@ -23,7 +23,7 @@ $robert->commande() ;
 echo "$robert" ;*/
 
 $robert = new Capitaine("Robert","prof","senior");
-$isra = new Capitaine("Isra","élève","mousaillon");
+$isra = new Marin("Isra","mousaillon");
 
 $equipage=array();
 
